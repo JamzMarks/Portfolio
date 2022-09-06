@@ -38,12 +38,17 @@ $mborder: rgb(49, 49, 49);
                     list-style: none;
                     display: flex;
                     li{
-                        font-size: 22px;
-                        cursor: pointer;
+                        
                         margin: 0 15px 0 0;
-                        &:hover{
-                            color: #d3d3d3;
+                        a{  
+                            color: inherit;
+                            font-size: 22px;
+                            cursor: pointer;
+                            &:hover{
+                                color: #e6e6e6;
+                            }
                         }
+                        
                     }
                 }
             }  

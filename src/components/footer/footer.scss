@@ -45,17 +45,20 @@
         flex-direction: row;
         list-style: none;
         li{
-            color: #b9b9b9;
             margin: 15px 10px 0;
-            cursor: pointer;
-            transition: 0.3s;
+            a{
+                color: #b9b9b9;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+            a:hover{
+                color: $main;
+            }
+            i{
+                font-size: 25px;
+            }
         }
-        li:hover{
-            color: $main;
-        }
-        i{
-            font-size: 25px;
-        }
+        
     }
 }
 

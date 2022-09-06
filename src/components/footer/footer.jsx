@@ -1,8 +1,8 @@
 import React from "react";
-import ReactDOM from 'react-dom'
 import './footer.scss'
 import Logo from "../../assets/images/logo.png"
-import { Link} from "react-router-dom"
+import {Link} from 'react-router-dom';
+
 
 const Footer = () =>{
     return(
@@ -30,9 +30,9 @@ const Footer = () =>{
                     <div className="socials">
                         <span className="span">Sociais</span>
                             <ul className="f-navbar">
-                                <li><i class="fa-brands fa-linkedin"></i></li>
-                                <li><i class="fa-brands fa-instagram"></i></li>
-                                <li><i class="fa-brands fa-github"></i></li>
+                                <li><a href="https://www.linkedin.com/in/james-marques-48828422b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="https://www.instagram.com/jamzmarks/" target='_blank'><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://github.com/JamzMarks" target='_blank'><i class="fa-brands fa-github"></i></a></li>
                             </ul>
                     </div> 
                     <div className="copy"> 

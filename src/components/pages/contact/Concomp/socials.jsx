@@ -35,9 +35,15 @@ const Socials = () => {
                         </div>
                         <div className="s_info">
                             <ul>
-                                <li><i class="fa-brands fa-linkedin"></i></li>
-                                <li><i class="fa-brands fa-instagram"></i></li>
-                                <li><i class="fa-brands fa-github"></i></li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/james-marques-48828422b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/jamzmarks/" target='_blank'><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/JamzMarks" target='_blank'><i class="fa-brands fa-github"></i></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
