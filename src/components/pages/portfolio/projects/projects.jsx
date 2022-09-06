@@ -12,7 +12,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="proj_content">
-
+                <p>teste</p>
             </div>
             
         </div>
