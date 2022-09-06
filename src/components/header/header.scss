@@ -1,0 +1,84 @@
+@import '../variable.scss';
+
+$nav: 100px;
+
+.container{
+    padding: $dspace;
+    .header{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: $nav 1fr;
+        grid-template-areas: 
+        'nav nav'
+        'h_infos none' ;
+        min-height: 700px;
+        max-height: 900px;
+        width: 100%;
+        background-color: $sec;
+        background-image: url(../../assets/images/bg.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to left, $main 30%, $sec) 1;
+        .navbar{
+            grid-area: nav;
+            height: $nav;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        .dlogo{
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .navigation{
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+            li{
+                margin-right: 10px;
+                padding: 30px 15px;
+                transition: 0.3s;
+                cursor: pointer;
+                color: white;
+            
+            }
+            li:hover{
+                color: $main;
+            }
+        }
+        } 
+        .h_infos{
+            grid-area: 'h_infos';
+            @extend .blocks;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+           .h_content{
+            
+                .h_title{
+                    text-transform: uppercase;
+                    width: 300px;
+                    height: 100px;
+                    h2{
+                        color: rgba(255, 255, 255, 0);
+                        font-size: 80px;
+                        -webkit-text-stroke-width: 1px;
+                        -webkit-text-stroke-color: rgb(255, 255, 255);
+                        span{
+                            color: $main;
+                            -webkit-text-stroke-width: 0px;
+                        }
+                    }
+                }
+           }
+           
+        }
+    }
+}
+

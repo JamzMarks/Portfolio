@@ -1,0 +1,121 @@
+@import '../../variable.scss';
+
+$mborder: rgb(49, 49, 49);
+
+// Socials
+
+.s_container{
+    @extend .blocks;
+    flex-direction: column;
+    h2{
+        text-transform: uppercase;
+        margin: 0 0 30px;
+    }
+    .s_cont{
+        width: 80%;
+        align-self: center;
+        padding: 20px 0;
+        border-top: 1px solid $mborder;
+        &:nth-child(2){
+            border: none;
+        }
+        .s_row{
+            display: flex;
+            align-items: flex-start;
+            .s_title,.s_info{
+                text-align: left;
+                padding: 0 15px 0 0;
+            }
+            .s_title{
+                width: 30%;
+                text-transform: uppercase;
+                color: white; 
+            }
+            .s_info{
+                width: 70%;
+                color: #b3b3b3;
+                ul{
+                    list-style: none;
+                    display: flex;
+                    li{
+                        font-size: 22px;
+                        cursor: pointer;
+                        margin: 0 15px 0 0;
+                        &:hover{
+                            color: #d3d3d3;
+                        }
+                    }
+                }
+            }  
+        }     
+    }
+    
+}
+
+
+
+// Form
+
+
+.form{
+    @extend .blocks;
+    .t{
+        width: 80%;
+        align-self: center;
+        .title{
+            text-transform: uppercase;
+            text-align: left;
+            margin: 0 0 20px;
+        }
+        
+
+    }
+    
+}
+.forms{
+    display: flex;
+    justify-content: space-between;
+    .form-group{
+        width: 48%;
+    }
+}
+
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 20px;
+    label{
+        font-size: 14px;
+        margin: 0 0 5px;
+    }
+    .inputs{
+        width: 100%;
+        outline: none;
+        background: none;
+        border: 1px solid $mborder;
+        padding: 10px 15px;
+        resize: none;
+        
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .s_row{
+        flex-direction: column;
+        .s_title{
+            margin: 0 0 15px;
+        }
+    }
+    .forms{
+        display: block;
+        .form-group{
+            width: initial;
+        }
+    }
+    
+}
+
+
