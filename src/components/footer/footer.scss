@@ -22,50 +22,54 @@
 
 .f-navigation{
     padding: $dspace;
-}
-
-.f-navbar{
-    grid-area: navbar;
-    list-style: none;
-    li{
-        margin: 15px 10px 0;
-        cursor: pointer;
-        transition: 0.3s;
+    .f-navbar{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .flinks{
+            color: #b9b9b9;
+            margin: 15px 10px 0;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .flinks:hover{
+            color: $main;
+        }
     }
-    li:hover{
-        color: $main;
-    }
-    i{
-        font-size: 25px;
-    }
-}
-
-.info{
-    font-weight: bolder;
-    
-    padding: $dspace;
-    grid-area: info;
-    p{
-        margin: 15px 0 0;
-        cursor: pointer;
-    }
-    
 }
 .socials{
     grid-area: socials;
     .f-navbar{
         display: flex;
         justify-content: center;
-    
+        flex-direction: row;
+        list-style: none;
+        li{
+            color: #b9b9b9;
+            margin: 15px 10px 0;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        li:hover{
+            color: $main;
+        }
+        i{
+            font-size: 25px;
+        }
     }
 }
-.copy{
-    grid-area: copy;
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 30px;
-}
 
+.info{
+    font-weight: bolder;
+    padding: $dspace;
+    grid-area: info;
+    
+    p{
+        margin: 15px 0 0;
+        cursor: pointer;
+    }
+    
+}
 .span{
     color: white;
     font-weight: bolder;
@@ -73,6 +77,15 @@
     padding: 5px;
     border-bottom: solid 1px $main;
 }
+
+.copy{
+    grid-area: copy;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 30px;
+}
+
+
 
 @media screen and (min-width: 1000px) {
     .footer{
@@ -83,8 +96,9 @@
         "dlogo navbar socials info "
         "copy copy copy copy";
     }
-    .socials .f-navbar{
-        display: initial;
-        
-    }
+    .socials{
+        .f-navbar{
+            flex-direction: column;
+        }
+    } 
 }

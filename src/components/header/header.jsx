@@ -13,9 +13,9 @@ const Header = () =>{
                         <img src={Logo} />
                     </div>
                     <ul className="navigation">
-                    <Link className="links" to='/'>Home</Link>
-                    <Link className="links" to='/portfolio'>Portfolio</Link>
-                    <Link className="links" to='/contact'>Contato</Link>
+                        <Link className="links" to='/'>Home</Link>
+                        <Link className="links" to='/portfolio'>Portfolio</Link>
+                        <Link className="links" to='/contact'>Contato</Link>
                     </ul> 
                 </nav>
                 <div className="h_infos">

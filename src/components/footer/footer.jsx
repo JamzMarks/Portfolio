@@ -17,9 +17,9 @@ const Footer = () =>{
                         <div className="f-navigation">
                             <span className="span">Navigation</span>
                             <ul className="f-navbar">
-                                <li>Home</li>
-                                <li>Portfolio</li>
-                                <li>Contato</li>
+                                <Link className="flinks" to='/'>Home</Link>
+                                <Link className="flinks" to='/portfolio'>Portfolio</Link>
+                                <Link className="flinks" to='/contact'>Contato</Link>
                             </ul>
                         </div>                        
                     </nav>
