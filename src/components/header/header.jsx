@@ -25,7 +25,7 @@ const Header = () =>{
                             <h2><span> James</span></h2>
                         </div>
                         <div className="h_btn">
-                            <button className="btn">Entre em contato</button>
+                            <button className="btn"> Entre em contato</button>
                         </div>
                     </div>
                     

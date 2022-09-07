@@ -1,4 +1,5 @@
 import React from "react";
+import Closecard from "../projectcard/closecard";
 
 const Projects = () => {
     return(
@@ -12,7 +13,21 @@ const Projects = () => {
                 </div>
             </div>
             <div className="proj_content">
-                <p>teste</p>
+                <Closecard
+                    img="../../../../assets/images/bg.jpg"
+                    name="eClose"
+                    status="Em andamento">
+                </Closecard>
+                <Closecard
+                    img="../../../../assets/images/bg.jpg"
+                    name="Soma 0"
+                    status="Iniciando">
+                </Closecard>
+                <Closecard
+                    img="../../../../assets/images/bg.jpg"
+                    name="Portfolio"
+                    status="Em andamento">
+                </Closecard>
             </div>
             
         </div>

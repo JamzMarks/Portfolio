@@ -1,5 +1,45 @@
 @import '../../variable.scss';
 
 .proj_content{
-    border: 1px solid $sec;
+    display: flex;
+    flex-direction: column;
+    .p_card{
+        cursor: pointer;
+        width: 100%;
+        border: 1px solid $sec;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        
+        .card_title{
+            font-family: sans-serif;
+            font-size: 20px;
+            text-align: left;
+            h3{
+                color: $main;
+                font-weight: 200;
+            }
+            .status{
+                span{
+                    font-size: 12px;
+                    color: rgb(95, 95, 95);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .proj_content{
+        margin: 0 2%;
+        padding: 20px 15px;
+        border: 1px solid $sec;
+        justify-content: space-around;
+        flex-direction: initial;
+        .p_card{
+            margin: 0 10px;
+            padding: 5px;
+        }
+    }
+
 }

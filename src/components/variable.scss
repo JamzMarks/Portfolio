@@ -47,6 +47,9 @@ $dspace: 0 0 70px 0;
     &:hover{    
         background-color: $main;
     }
+    &:focus{
+        outline: none;
+    }
 }
 .bt_down{
     display: flex;
