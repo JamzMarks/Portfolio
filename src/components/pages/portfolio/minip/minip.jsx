@@ -14,17 +14,20 @@ const Minip = () => {
             </div>
             <div className="proj_content">
                 <Closecard
-                    img="../../../../assets/images/bg.jpg"
+                    git=""
+                    url=""
                     name="Calculadora"
                     status="Concluído">
                 </Closecard>
                 <Closecard
-                    img="../../../../assets/images/bg.jpg"
+                    git=""
+                    url=""
                     name="Sem Projeto"
                     status="Não Iniciado">
                 </Closecard>
                 <Closecard
-                    img="../../../../assets/images/bg.jpg"
+                    git=""
+                    url=""
                     name="Sem Projeto"
                     status="Não Iniciado">
                 </Closecard>

@@ -61,6 +61,7 @@
 
         .card{
             position: relative;
+            margin: 0 10px;
             i{
                 font-size: 50px;
             }
@@ -140,7 +141,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
     .t_cards{
         align-items: center;
         flex-wrap: wrap;

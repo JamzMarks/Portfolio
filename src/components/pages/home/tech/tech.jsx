@@ -19,7 +19,7 @@ const Tech = () =>{
                     type="brands"
                     icon="python" 
                     title="Python" 
-                    text="Linguagem usada em minha faculdadede.">
+                    text="Linguagem usada em minha faculdade.">
                 </Card>
                 <Card
                     type="solid"

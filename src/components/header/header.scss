@@ -11,7 +11,7 @@ $nav: 100px;
         grid-template-areas: 
         'nav nav'
         'h_infos none' ;
-        min-height: 600px;
+        min-height: 700px;
         max-height: 900px;
         width: 100%;
         background-color: $sec;
@@ -38,6 +38,9 @@ $nav: 100px;
             list-style: none;
             font-weight: bold;
             letter-spacing: 1px;
+            @media screen and (max-width:700px) {
+                display: none;
+            }
             .links{
                 margin-right: 10px;
                 padding: 30px 15px;
@@ -53,19 +56,17 @@ $nav: 100px;
         } 
         .h_infos{
             grid-area: 'h_infos';
-            @extend .blocks;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
+            // @extend .blocks;
 
-           .h_content{
+            .h_content{
+                display: flex;
+                flex-direction: column;
                 .h_title{
-                    text-transform: uppercase;
-                    max-width: 300px;
-                    height: 100px;
-                    font-size: 55px;
+                    display: block;
+                    width: 80%;
+                    background-color: rgb(89, 0, 255);
                     h2{
+                        font-size: 60px;
                         color: rgba(255, 255, 255, 0);
                         -webkit-text-stroke-width: 1px;
                         -webkit-text-stroke-color: rgb(255, 255, 255);
@@ -75,16 +76,34 @@ $nav: 100px;
                         }
                     }
                 }
-           }
+            }
+
+        //    .h_content{
+        //         .h_title{
+        //             text-transform: uppercase;
+        //             max-width: 300px;
+        //             height: 100px;
+        //             font-size: 55px;
+        //             h2{
+        //                 color: rgba(255, 255, 255, 0);
+        //                 -webkit-text-stroke-width: 1px;
+        //                 -webkit-text-stroke-color: rgb(255, 255, 255);
+        //                 span{
+        //                     color: $main;
+        //                     -webkit-text-stroke-width: 0px;
+        //                 }
+        //             }
+        //         }
+        //    }
            
         }
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .h_title{
-        font-size: 30px;
-    }
+// @media screen and (max-width: 1000px) {
+//     .h_title{
+//         font-size: 30px;
+//     }
     
-}
+// }
 

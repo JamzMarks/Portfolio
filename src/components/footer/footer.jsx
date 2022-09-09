@@ -19,7 +19,7 @@ const Footer = () =>{
                             <ul className="f-navbar">
                                 <Link className="flinks" to='/'>Home</Link>
                                 <Link className="flinks" to='/portfolio'>Portfolio</Link>
-                                <Link className="flinks" to='/contact'>Contato</Link>
+                                <Link className="flinks" to='/contact'>Contact</Link>
                             </ul>
                         </div>                        
                     </nav>
@@ -28,7 +28,7 @@ const Footer = () =>{
                         <p>Jamzmarks@gmail.com</p>
                     </div>
                     <div className="socials">
-                        <span className="span">Sociais</span>
+                        <span className="span">Social</span>
                             <ul className="f-navbar">
                                 <li><a href="https://www.linkedin.com/in/james-marques-48828422b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                                 <li><a href="https://www.instagram.com/jamzmarks/" target='_blank'><i class="fa-brands fa-instagram"></i></a></li>

@@ -1,44 +1,113 @@
 @import '../../variable.scss';
 
+.p_title{
+    padding: 0 0 30px 0;
+}
+
 .proj_content{
     display: flex;
     flex-direction: column;
     .p_card{
-        cursor: pointer;
-        width: 100%;
-        border: 1px solid $sec;
-        border-radius: 10px;
         display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        border: 1px solid $sec;
         flex-direction: column;
+        .card_img{
+            height: 200px;   
+        }
+        .card__image {
+            cursor: pointer;
+            background-repeat: no-repeat;
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+            filter: contrast(70%);
+            //filter: saturate(180%);
+            overflow: hidden;
+            position: relative;
+            transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);;
+            &::before {
+              content: "";
+                display: block;
+              padding-top: 56.25%; // 16:9 aspect ratio
+            }
+            @media(min-width: 40rem) {
+              &::before {
+                padding-top: 66.6%; // 3:2 aspect ratio
+              }
+            }
+          }
         
         .card_title{
-            font-family: sans-serif;
-            font-size: 20px;
-            text-align: left;
-            h3{
-                color: $main;
-                font-weight: 200;
-            }
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            padding: 1rem; 
             .status{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
                 span{
-                    font-size: 12px;
+                    font-size: 13px;
                     color: rgb(95, 95, 95);
+                }
+                h3{
+                    font-weight: 200;
+                }
+            }
+            .card_btns{
+                display: flex;
+                flex-direction: column;
+                button{
+                    margin: 10px 0;
+                    font-size: 14px;
+                    background-color: rgb(0, 0, 0);
+                    color: white;
+                    transition: 0.5s ease-in-out;
+                    outline: none;
+                    border: none;
+                    border-radius: 0;
+                    a{
+                        color: inherit;
+                    }
+                    span{
+                        font-size: 11px;
+                        margin: 0 3px ;
+                    }
+                    &:hover{
+                        background-color: $main;
+                        
+                    }
+
+
+
                 }
             }
         }
     }
 }
 
-@media screen and (min-width: 600px) {
+.card__image--project {
+    background-image: url(../../../assets/images/bg.gif);
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1050px) {
     .proj_content{
         margin: 0 2%;
         padding: 20px 15px;
-        border: 1px solid $sec;
         justify-content: space-around;
         flex-direction: initial;
+    }
+
+}
+@media screen and (min-width: 500px) {
+    .proj_content{
+        align-items: center;
         .p_card{
-            margin: 0 10px;
-            padding: 5px;
+            width: 80%;
         }
     }
 
