@@ -16,8 +16,13 @@ const Closecard = (props) => {
                     <span>{props.status}</span>
                 </div>
                 <div className="card_btns">
-                    <button><a href={props.url}>View Project<span><i class="fa-solid fa-chevron-right"></i></span></a></button>
-                    <button><a href={props.git}>Code <i class="fa-brands fa-github"></i></a></button>
+                    
+                        <a href={props.url}>View Project
+                                <span><i class="fa-solid fa-chevron-right"></i></span>
+                        </a>
+                        <a href={props.git}>
+                                Code <i class="fa-brands fa-github"></i>
+                        </a>
                 </div>
             </div>
         </div>
