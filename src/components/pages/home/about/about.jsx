@@ -21,12 +21,10 @@ export function About() {
                         </p>
                     </div>
                     <div className='a_cv'>
-                        <button className='btn bt_down'> 
-                            <a href={CV} downdload>
+                            <a href={CV} downdload className='btn bt_down'>
                                 <i className="fa-solid fa-download"></i>
                                 Download CV 
                             </a>
-                        </button>
     
                     </div>
                 </div>
