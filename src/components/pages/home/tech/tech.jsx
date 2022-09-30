@@ -6,7 +6,7 @@ const Tech = () =>{
     return(
         <div className="t_container">
             <div className="divisoria">
-                <h2 >Tecnologias</h2>
+                <h2 className="lines">Tecnologias</h2>
             </div>
             <div className="t_cards">
                 <Card

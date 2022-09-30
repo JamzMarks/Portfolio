@@ -12,6 +12,9 @@ export function About() {
                         <h3 className='divisoria'>Sobre mim</h3>
                     </div>
                     <div className='a_desc'>
+                        <h3>
+                        Eu sou James Marques e Full Stack Web Developer
+                        </h3>
                         <p>
                             Sou Desenvolvedor Full Stack Web, atualmente estou
                             cursando o superior em Ciência da Computação pela UNIP de Alphaville.

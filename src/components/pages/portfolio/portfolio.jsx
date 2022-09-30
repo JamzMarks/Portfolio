@@ -8,7 +8,6 @@ const Portfolio = () => {
     return(
         <div>
             <Projects></Projects>
-            <Minip></Minip>
         </div>
     )
 }

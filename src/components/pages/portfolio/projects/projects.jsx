@@ -14,19 +14,16 @@ const Projects = () => {
             </div>
             <div className="proj_content">
                 <Closecard
-                    url=""
                     git="https://github.com/JamzMarks/eClose"
                     name="eClose"
                     status="Em andamento">
                 </Closecard>
                 <Closecard
-                    url=""
-                    git=""
-                    name="Soma 0"
-                    status="Iniciando">
+                    git="https://github.com/JamzMarks/EncontreSeuDuo"
+                    name="NLW eSports"
+                    status="Concluído">
                 </Closecard>
                 <Closecard
-                    url=""
                     git="https://github.com/JamzMarks/Portfolio"
                     name="Portfolio"
                     status="Em andamento">

@@ -12,6 +12,7 @@ const Header = () =>{
                     <div className="dlogo">
                         <img src={Logo} />
                     </div>
+                            
                     <ul className="navigation">
                         <Link className="links" to='/'>Home</Link>
                         <Link className="links" to='/portfolio'>Portfolio</Link>
