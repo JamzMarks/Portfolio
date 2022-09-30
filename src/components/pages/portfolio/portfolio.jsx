@@ -1,6 +1,5 @@
 import React from "react";
 import Projects from "./projects/projects";
-import Minip from "./minip/minip";
 import './portfolio.scss'
 
 
