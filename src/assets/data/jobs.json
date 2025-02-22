@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "job": "Full Stack Developer Intern",
+        "company": "Compass UOL",
+        "year": {
+            "init": 2023,
+            "end": "atual"
+        },
+        "tech": [
+            "JavaScript",
+            "Node.js",
+            "Nest.js",
+            "PostgreSQL",
+            "TypeScript"
+        ],
+        "description": "Colaborando no desenvolvimento de soluções web e mobile utilizando tecnologias modernas. Foco em React,Node.js, e integração com APIs."
+
+    },
+    {
+        "id": 2,
+        "job": "SEO intern",
+        "company": "Yooper Digital Marketing",
+        "year": {
+            "init": 2022,
+            "end": 2023
+        },
+        "tech": [
+            "SEO",
+            "Google Analytics",
+            "HTML",
+            "CSS",
+            "WordPress"
+        ],
+        "description": "Colaborando no desenvolvimento de soluções web e mobile utilizando tecnologias modernas. Foco em React,Node.js, e integração com APIs."
+
+    }
+]

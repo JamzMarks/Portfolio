@@ -1,0 +1,119 @@
+.infos{
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.info-wrapper{
+    height: 100%;
+    margin: 20% 0;
+    text-align: left;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+
+    .details{
+        font-family: "Inter", sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        .details-wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            h1{
+                font-size: 48px;
+            }
+            h2{
+                font-size: 20px;
+            }
+        }
+        .links{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .curriculo{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            .downBtn{
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                background-color: #006144be;
+                color: white;
+                border: none;
+                padding: 10px 16px;
+                border-radius: 15px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: background-color 0.3s, transform 0.2s;
+                text-decoration: none;
+                max-width: 200px;
+                i{
+                    margin-right: 10px;
+                }
+                
+            }
+            .downBtn i {
+                font-size: 18px;
+              }
+            
+              .downBtn:hover {
+                background-color: #2ebeb2; 
+                transform: scale(1.05); 
+              }
+            
+              .downBtn:active {
+                transform: scale(0.98);
+              }
+        } 
+        .navigation{
+            .links{
+                list-style: none;
+                .link{
+                    color: #babfc5;
+                    transition: color 0.2s ease-out, transform 0.2s ease-out;
+                }
+                .link:hover{
+                    color: white;
+                    transform: scale(1.05); 
+                    transform: translateX(30px);
+                    
+                }
+            }
+        }
+    }
+    .socials{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: start;
+        
+        list-style: none;
+        
+        .social{
+            min-width: 38px;
+            min-height: 38px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            a{
+                color: #babfc5;
+                transition: 0.3s ease;
+            }
+            a:hover{
+                color: #E2E8F0;
+                color: #2ebeb2;
+            }
+        }
+    }
+}

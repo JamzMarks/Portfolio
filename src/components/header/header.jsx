@@ -1,38 +1,19 @@
 import React from "react";
 import './header.scss'
-import Logo from "../../assets/images/logo.png"
 import { Link } from "react-router-dom";
 
 const Header = () =>{
     return(
-        <div className="container">
-            <header className="header">
-                
-                <nav className="navbar">
-                    <div className="dlogo">
-                        <img src={Logo} />
-                    </div>
-                            
-                    <ul className="navigation">
-                        <Link className="links" to='/'>Home</Link>
-                        <Link className="links" to='/portfolio'>Portfolio</Link>
-                        <Link className="links" to='/contact'>Contact</Link>
-                    </ul> 
-                </nav>
-                <div className="h_infos">
-                    <div className="h_content">
-                        <div className="h_title">
-                            <h2>Marques<span> James</span></h2>
-                        </div>
-                        <div className="h_btn">
-                            <button className="btn"> Entre em contato</button>
-                        </div>
-                    </div>
-                </div>
-                    
-            </header>
-        </div>
+        <header>
+            <nav className="navigation">
+                <ul className="links">
+                    <Link className="link" to='/'>Sobre</Link>
+                    <Link className="link" to='/portfolio'>Portfolio</Link>
+                    <Link className="link" to='/contact'>Contato</Link>
+                </ul> 
+            </nav>
+        </header>
     )
 } 
 
-export default Header
+export default Header;

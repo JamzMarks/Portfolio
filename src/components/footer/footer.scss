@@ -1,107 +1,27 @@
 @import '../variable.scss';
 
-
-
+.container{
+    background-color: aliceblue;
+    color: black;
+}
 .content{
-    color: rgb(185, 185, 185);
-    border-top: 2px solid;
-    border-image: linear-gradient(to left, $main 30%, $sec) 1;
-    .main{
-        background-color: $sec;
-        .footer{
-            font-size: 16px;
-            padding: 70px 0 25px;
-            font-family: sans-serif; 
-            .dlogo{
-                padding: $dspace;
-                grid-area: dlogo;
-            }
-        }
-    }
+    max-width: 1280px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
 }
 
-.f-navigation{
-    padding: $dspace;
-    .f-navbar{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        .flinks{
-            color: #b9b9b9;
-            margin: 15px 10px 0;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .flinks:hover{
-            color: $main;
-        }
-    }
-}
-.socials{
-    grid-area: socials;
-    .f-navbar{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        list-style: none;
-        li{
-            margin: 15px 10px 0;
-            a{
-                color: #b9b9b9;
-                cursor: pointer;
-                transition: 0.3s;
-            }
-            a:hover{
-                color: $main;
-            }
-            i{
-                font-size: 25px;
-            }
-        }
-        
-    }
-}
-
-.info{
-    font-weight: bolder;
-    padding: $dspace;
-    grid-area: info;
-    
-    p{
-        margin: 15px 0 0;
-        cursor: pointer;
-    }
-    
-}
-.span{
+.contact{
+    background-color: black;
     color: white;
-    font-weight: bolder;
-    font-size: 15px;
-    padding: 5px;
-    border-bottom: solid 1px $main;
-}
-
-.copy{
-    grid-area: copy;
+    border-radius: 20px;
     display: flex;
-    justify-content: flex-end;
-    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    min-height: 198px;
 }
 
 
 
-@media screen and (min-width: 1000px) {
-    .footer{
-        display: grid;
-        grid-template-rows: 1fr 30px ;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-        "dlogo navbar socials info "
-        "copy copy copy copy";
-    }
-    .socials{
-        .f-navbar{
-            flex-direction: column;
-        }
-    } 
-}
