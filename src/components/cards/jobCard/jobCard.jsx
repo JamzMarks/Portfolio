@@ -6,7 +6,7 @@ const JobCard = (props) => {
     return (
         <article className="jobCard">
             <div className="year">
-                <p>{toString(year.init)} - {toString(year.end)}</p>
+                <p>{year.init} - {year.end}</p>
             </div>
             <div className="info">
                 <div className="title">

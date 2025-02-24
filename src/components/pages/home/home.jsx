@@ -1,19 +1,27 @@
 import React, { useEffect, useState } from "react";
 import JobCard from '../../cards/jobCard/jobCard'
 import './home.scss'
-import { fetchData } from "../../../utils/fetchData";
+// import { fetchData } from "../../../utils/fetchData";
 
 
 const Home = () => {  
     const [data, setData]  = useState([]);
 
     useEffect(() => {
-        const getData = async () => {
-            const response = await fetchData('jobs.json');
-            setData(response);
-        }
-        getData();
-    }, [])
+            async function getData(){
+                try {
+                    const response = await fetch('public/data/jobs.json')
+                    if(!response.ok){
+                        throw new Error("Erro ao buscar os dados");
+                    }
+                    const jsonData = await response.json();
+                    setData(jsonData);
+                } catch (error) {
+                    console.error("Erro ao carregar os dados:", error);
+                }
+            }
+            getData();
+        }, [])
     return(
         <article className="about">
             <div className="aboutme">
@@ -60,6 +68,16 @@ const Home = () => {
                         <li className="tech-item">Jest</li>
                     </ul>
                 </div>
+            </div>
+            <div className="jobs">
+                {data.map((element, index) => {
+                    return (
+                        <JobCard
+                            key={index}
+                            {...element}
+                        />
+                    )
+                })}
             </div>
         </article>
     )

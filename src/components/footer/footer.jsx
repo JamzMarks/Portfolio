@@ -6,8 +6,6 @@ const Footer = () => {
   return (
     <footer className="container">
       <div className="content">
-        <div className="links">
-        </div>
         <div className="copyright">
           <p>Created by Jamzmarks © {getYear()}</p>
           <p>Coded in Visual Studio Code. Built with React.js and Sass, deployed with Vercel.</p>
