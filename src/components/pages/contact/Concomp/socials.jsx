@@ -6,7 +6,7 @@ const Socials = () => {
                 <div className="s_cont">
                     <div className="s_row">
                         <div className="s_title">
-                            <h3 ><i class="fa-solid fa-phone"></i>Telefone</h3>
+                            <h3 ><i className="fa-solid fa-phone"></i>Telefone</h3>
                         </div>
                         <div className="s_info">
                             <p>+55 (11) 997960-292</p>
@@ -16,7 +16,7 @@ const Socials = () => {
                 <div className="s_cont">
                     <div className="s_row">
                         <div className="s_title">
-                            <h3> <i class="fa-solid fa-envelope"></i> E-mail</h3>
+                            <h3> <i className="fa-solid fa-envelope"></i> E-mail</h3>
                         </div>
                         <div className="s_info">
                             <p>jamzmarks@gmail.com</p>

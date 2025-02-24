@@ -16,8 +16,9 @@
   grid-template-rows: 1fr;
 }
 
-.content-main{
+.content-main {
   display: grid;
   grid-template-rows: 1fr auto;
   margin: 100px 0;
 }
+

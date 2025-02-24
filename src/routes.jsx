@@ -13,7 +13,7 @@ const AppRoutes = () => {
         <main className="content-main">
                 <Routes>
                     <Route path="/" exact element={<Home />} />
-                    <Route path=" /projects" element={<Projects />} />
+                    <Route path="/projects" element={<Projects />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="*" element={<Home />} />
                 </Routes>

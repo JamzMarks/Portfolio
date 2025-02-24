@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Shop.co",
+        "description": "A simple project by Compass UOL for training HTML, CSS and JS vanilla. Focus on mobile first and responsivity.",
+        "link": "https://github.com/JamzMarks/CompassUOL-Desafio2",
+        "tech": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "image": "public/assets/images/project/shop.co.png"
+    },
+    {
+        "id": 2,
+        "title": "Arduino line follower v3",
+        "description": "Atividade Prática Semestral com temática socio-ambiental de resgate de pessoas em áreas nocivas ou de risco com veículo autônomo.",
+        "link": "https://github.com/JamzMarks/Arduino-Line-Follower",
+        "tech": [
+            "C++",
+            "Arduino"
+        ],
+        "image": "public/assets/images/project/shop.co.png"
+    },
+    {
+        "id": 3,
+        "title": "Trash Killer v2",
+        "description": "Segundo versão do jogo TrashKiller, desenvolvida para apresentação de APS 5ª semestre na UNIP - Alphaville. Nota adquirida: 10.",
+        "link": "https://github.com/JamzMarks/TrashKiller2",
+        "tech": [
+            "C#",
+            "Photon",
+            "Unity"
+        ],
+        "image": "public/assets/images/project/shop.co.png"
+    },
+    {
+        "id": 4,
+        "title": "Portfolio v2",
+        "description": "My simple portfolio for jobs interview demostration, this is the second version and soon will be upgraded for expose my works.",
+        "link": "https://github.com/JamzMarks/Portfolio",
+        "tech": [
+            "React",
+            "JavaScript",
+            "SASS",
+            "Vite"
+        ],
+        "image": "public/assets/images/project/shop.co.png"
+    }
+]
