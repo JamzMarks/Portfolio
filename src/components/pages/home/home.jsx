@@ -14,64 +14,53 @@ const Home = () => {
         }
         getData();
     }, [])
-
-    const data2 = [
-        {
-            id: 1,
-            job: "Full Stack Developer Intern",
-            company: "Compass UOL",
-            year: {
-                init: 2023,
-                end: "atual"
-            },
-            tech: [
-                "JavaScript",
-                "Node.js",
-                "Nest.js",
-                "PostgreSQL",
-                "TypeScript"
-            ],
-            description: "Colaborando no desenvolvimento de soluções web e mobile utilizando tecnologias modernas. Foco em React,Node.js, e integração com APIs."
-    
-        },
-        {
-            id: 2,
-            job: "SEO intern",
-            company: "Yooper Digital Marketing",
-            year: {
-                init: 2022,
-                end: 2023
-            },
-            tech: [
-                "SEO",
-                "Google Analytics",
-                "HTML",
-                "CSS",
-                "WordPress"
-            ],
-            description: "Colaborando no desenvolvimento de soluções web e mobile utilizando tecnologias modernas. Foco em React,Node.js, e integração com APIs."
-    
-        }
-    ]
-    console.log(data2[0])
     return(
         <article className="about">
             <div className="aboutme">
                 <p className="desc">
-                    Sou estudante de Ciência da Computação na UNIP - Alphaville e desenvolvedor full stack, atualmente estagiando na Compass UOL. Tive a oportunidade de realizar um estágio em SEO, o que contribuiu para minha visão estratégica em desenvolvimento e otimização de sistemas. Além disso, tenho experiência prática em projetos acadêmicos, como o desenvolvimento de um jogo multiplayer 2D utilizando Unity e Photon, e um projeto com Arduino, no qual criei um carro autônomo seguidor de linha, integrando sensores como ultrassônico e RFID, com exibição de dados em um LCD 16x2.
-                    Minha experiência técnica abrange o backend, com C#, Node.js, C++, APIs REST e bancos de dados SQL como MySQL e SQL Server, além do frontend, onde utilizo ReactJS, NextJs, SASS e TypeScript. Meus interesses estão voltados para Inteligência Artificial, Robótica e Desenvolvimento de Software, sempre buscando aprender e aplicar novos conhecimentos.
+                    Hi, my name is James Marques and i am a computer science student and Full Stack Developer at Compass UOL. 
+                    Meus interesses estão voltados para Inteligência Artificial, Robótica e Desenvolvimento de Software, sempre buscando aprender e aplicar novos conhecimentos.
                 </p>
             </div>
             <div className="tech">
-                <h2 className="title">Tecnologias</h2>
-                <p><i className="fa-solid fa-code"></i></p>
-                <p><i className="fa-solid fa-box"></i></p>
-                <p><i className="fa-solid fa-database"></i></p>
-                <p><i className="fa-solid fa-screwdriver-wrench"></i></p>
+                <h2 className="title">Technologies</h2>
+                <div className="tech-wrapper">
+                    <p><i className="fa-solid fa-code"></i></p>
+                    <ul className="tech-list">
+                        <li className="tech-item">JavaScript</li>
+                        <li className="tech-item">TypeScript</li>
+                        <li className="tech-item">C#</li>
+                        <li className="tech-item">C++</li>
+                        <li className="tech-item">Python</li>
+                    </ul>
+                </div>
+                <div className="tech-wrapper">
+                    <p><i className="fa-solid fa-box"></i></p>
+                    <ul className="tech-list">
+                        <li className="tech-item">Docker</li>
+                        <li className="tech-item">Kubernets</li>
+                    </ul>
+                </div>
+                <div className="tech-wrapper">
+                    <p><i className="fa-solid fa-database"></i></p>
+                    <ul className="tech-list">
+                        <li className="tech-item">MySQL</li>
+                        <li className="tech-item">SQLServer</li>
+                        <li className="tech-item">PostgreSQL</li>
+                        <li className="tech-item">OracleDB</li>
+                    </ul>
+                </div>
+                <div className="tech-wrapper">
+                    <p><i className="fa-solid fa-screwdriver-wrench"></i></p>
+                    <ul className="tech-list">
+                        <li className="tech-item">React</li>
+                        <li className="tech-item">Nest.js</li>
+                        <li className="tech-item">Node.js</li>
+                        <li className="tech-item">Next.js</li>
+                        <li className="tech-item">Jest</li>
+                    </ul>
+                </div>
             </div>
-            {data2.forEach((element) => {
-                <JobCard job={element} />
-            })}
         </article>
     )
 }

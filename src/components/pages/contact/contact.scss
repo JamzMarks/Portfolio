@@ -2,15 +2,21 @@
 
 $mborder: rgb(49, 49, 49);
 
+
+.contact-Section{
+    display: grid;
+    gap: 30px;
+    .title{
+        text-transform: capitalize;
+        font-weight: 400;
+        text-align: left;
+    }
+}
 // Socials
 
-.s_container{
-    @extend .blocks;
+.socials{
+    width: 100%;
     flex-direction: column;
-    h2{
-        text-transform: uppercase;
-        margin: 0 0 30px;
-    }
     .s_cont{
         width: 80%;
         align-self: center;
@@ -60,53 +66,36 @@ $mborder: rgb(49, 49, 49);
 
 
 // Form
-
-
-.form{
-    @extend .blocks;
-    .t{
-        width: 80%;
-        align-self: center;
-        .title{
-            text-transform: uppercase;
-            text-align: left;
-            margin: 0 0 20px;
+.contact-Form{
+    .forms{
+        display: flex;
+        justify-content: space-between;
+        .form-group{
+            width: 48%;
         }
-        
-
     }
-    
-}
-.forms{
-    display: flex;
-    justify-content: space-between;
     .form-group{
-        width: 48%;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 0 20px;
+        label{
+            font-size: 14px;
+            margin: 0 0 5px;
+        }
+        .inputs{
+            color: #b3b3b3;
+            width: 100%;
+            outline: none;
+            background: none;
+            border: 1px solid $mborder;
+            padding: 10px 15px;
+            resize: none;
+            border-radius: 10px;
+            
+        }
+    } 
 }
-
-
-.form-group{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0 0 20px;
-    label{
-        font-size: 14px;
-        margin: 0 0 5px;
-    }
-    .inputs{
-        color: #b3b3b3;
-        width: 100%;
-        outline: none;
-        background: none;
-        border: 1px solid $mborder;
-        padding: 10px 15px;
-        resize: none;
-        
-    }
-}
-
 
 @media screen and (max-width: 1000px) {
     .s_row{

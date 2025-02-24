@@ -13,7 +13,7 @@ const Infos = () => {
                 <h1>James Marques</h1>
                 <h2>Full Stack Developer</h2>
                 <div>
-                  <p>Science Computer underdegree.</p>
+                  <p>Computer Science underdegree.</p>
                   <p>Brazil - Sao Paulo</p>
                 </div>
                 
@@ -22,7 +22,7 @@ const Infos = () => {
             <nav className="navigation">
                 <ul className="links">
                     <li><Link className="link" to='/'>About</Link></li>
-                    <li><Link className="link" to='/portfolio'>Portfolio</Link></li>
+                    <li><Link className="link" to='/projects'>Projects</Link></li>
                     <li><Link className="link" to='/contact'>Contact</Link></li>
                 </ul> 
             </nav>

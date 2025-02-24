@@ -10,7 +10,7 @@ $dspace: 0 0 70px 0;
     box-sizing: border-box;
 }
 
-#contact, .about, .minip, .projects{
+#contact, .projects{
     @extend .section;
 }
 .divisoria{
@@ -21,12 +21,7 @@ $dspace: 0 0 70px 0;
     letter-spacing:3px;
 
 }
-.blocks{
-    display: flex;
-    justify-content: center;
-    max-width: 1140px;
-    margin: 0 auto;
-}
+
 .section{
     padding: 0 0 80px;
     display: block;

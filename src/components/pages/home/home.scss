@@ -1,9 +1,39 @@
 @import '../../variable.scss';
 
 .about{
-    margin-top: 70px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    width: 100%;    
+    align-items: start;
+    gap: 30px;
+    .desc{
+        text-align: justify;
+    }
+
+    .tech{
+        text-align: left;
+        display: grid;
+        gap: 30px;
+        .tech-wrapper{
+            display: flex;
+            gap: 30px;
+            p{
+                width: 50px;
+                i{
+                    font-size: 28px;
+                    align-self: center;
+                }
+            }
+            .tech-list{
+                list-style: none;
+                display: flex;
+                gap: 15px;
+                .tech-item{
+                    background-color: aliceblue;
+                    padding: 0 10px;
+                    border-radius: 15px;
+                    color: rgb(2, 11, 43);
+                }
+            }
+        }
+    }
 }

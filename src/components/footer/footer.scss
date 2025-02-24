@@ -1,8 +1,7 @@
 @import '../variable.scss';
 
 .container{
-    background-color: aliceblue;
-    color: black;
+    color: white;
 }
 .content{
     max-width: 1280px;
@@ -12,16 +11,6 @@
     gap: 30px;
 }
 
-.contact{
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2%;
-    min-height: 198px;
-}
 
 
 

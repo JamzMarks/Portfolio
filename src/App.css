@@ -6,15 +6,18 @@
   --footer-height: 150px;
 }
 
-.main{
+.App{
   width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
   height: 100vh;
   display: grid;
   grid-template-columns: 40% 1fr;
   grid-template-rows: 1fr;
 }
+
 .content-main{
-  height: 100vh;
   display: grid;
   grid-template-rows: 1fr auto;
+  margin: 100px 0;
 }
