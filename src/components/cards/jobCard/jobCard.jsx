@@ -11,7 +11,6 @@ const JobCard = (props) => {
             <div className="info">
                 <div className="title">
                     <h2 className="job">{job} <span></span>{company}</h2>
-                    
                 </div>
                 <p>
                     {description}

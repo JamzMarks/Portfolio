@@ -4,38 +4,39 @@ $mborder: rgb(49, 49, 49);
 
 
 .contact-Section{
+    margin-top: 100px;
     display: grid;
+    grid-template-rows: 1fr 1fr;
     gap: 30px;
-    .title{
-        text-transform: capitalize;
-        font-weight: 400;
-        text-align: left;
-    }
 }
 // Socials
 
 .socials{
     width: 100%;
+    display: flex;
     flex-direction: column;
+    gap: 40px;
+    .title{
+        text-align: left;
+        
+    }
     .s_cont{
-        width: 80%;
+        width: 100%;
         align-self: center;
-        padding: 20px 0;
-        border-top: 1px solid $mborder;
-        &:nth-child(2){
-            border: none;
-        }
         .s_row{
             display: flex;
-            align-items: flex-start;
             .s_title,.s_info{
                 text-align: left;
                 padding: 0 15px 0 0;
             }
             .s_title{
-                width: 30%;
                 text-transform: uppercase;
                 color: white; 
+                h3{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                }
             }
             .s_info{
                 width: 70%;
@@ -67,12 +68,78 @@ $mborder: rgb(49, 49, 49);
 
 // Form
 .contact-Form{
+    display: grid;
+    gap: 50px;
+    .title{
+        text-align: left;
+        
+    }
     .forms{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        
         .form-group{
             width: 48%;
         }
+        .group {
+            position: relative;
+        }
+        .input {
+            font-size: 16px;
+            padding: 10px 10px 10px 5px;
+            display: block;
+            width: 100%;
+            height: auto;
+            border: none;
+            border-bottom: 1px solid #ffffff83;
+            background: transparent;
+            resize: none;
+            color: white;
+        }
+        .input:focus {
+            outline: none;
+            
+        }
+        label {
+            color: #999;
+            font-size: 18px;
+            font-weight: normal;
+            position: absolute;
+            pointer-events: none;
+            left: 5px;
+            top: 10px;
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+        }
+        .input:focus ~ label, .input:valid ~ label {
+            top: -20px;
+            font-size: 14px;
+            color: #194dbd;
+           }
+           
+           .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+            width: 50%;
+           }
+           
+           .highlight {
+            position: absolute;
+            height: 60%;
+            width: 100px;
+            top: 25%;
+            left: 0;
+            pointer-events: none;
+            opacity: 0.5;
+           }
+           
+           .input:focus ~ .highlight {
+            animation: inputHighlighter 0.3s ease;
+           }
+           #textAreaGroup{
+                grid-column: span 2;
+           }
     }
     .form-group{
         display: flex;
@@ -88,29 +155,21 @@ $mborder: rgb(49, 49, 49);
             width: 100%;
             outline: none;
             background: none;
-            border: 1px solid $mborder;
+            border: 1px solid rgba(255, 255, 255, 0.342);
             padding: 10px 15px;
-            resize: none;
             border-radius: 10px;
             
         }
+        .message{
+            border: 1px solid rgba(255, 255, 255, 0.342);
+            background: none;
+            outline: none;
+            resize: none;
+            border-radius: 10px;
+            padding: 10px 15px;
+            color: white;
+        }
     } 
-}
-
-@media screen and (max-width: 1000px) {
-    .s_row{
-        flex-direction: column;
-        .s_title{
-            margin: 0 0 15px;
-        }
-    }
-    .forms{
-        display: block;
-        .form-group{
-            width: initial;
-        }
-    }
-    
 }
 
 

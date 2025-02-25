@@ -8,9 +8,26 @@
     max-width: 655px;
     padding: 1%;
     transition: 0.2 ease;
+    .year{
+        color: #2b68ec;;
+    }
     .info{
         display: grid;
         gap: 10px;
+        .title .job{
+            font-size: 18px;
+            span {
+                display: inline-block;
+                width: 2px; 
+                height: 15px;
+                background-color: #777; 
+                margin: 0 8px; 
+            }
+        }
+        p{
+            font-size: 14px;
+            color: #ffffff96;
+        }
     }
     .technologies{
         
@@ -27,5 +44,6 @@
     }
     
 }.jobCard:hover{
-    box-shadow: #999999;
+    background-color: #3688cc13; /* Azul escuro */
+    // box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
 }

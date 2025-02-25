@@ -1,9 +1,4 @@
-.infos{
-    grid-row: span 2;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+
 
 .info-wrapper{
     height: 100%;
@@ -43,7 +38,7 @@
                 display: flex;
                 align-items: center;
                 gap: 8px;
-                background-color: #006144be;
+                background-color: #002761;
                 color: white;
                 border: none;
                 padding: 10px 16px;
@@ -54,9 +49,7 @@
                 transition: background-color 0.3s, transform 0.2s;
                 text-decoration: none;
                 max-width: 200px;
-                i{
-                    margin-right: 10px;
-                }
+                justify-content: center;
                 
             }
             .downBtn i {
@@ -64,7 +57,7 @@
               }
             
               .downBtn:hover {
-                background-color: #2ebeb2; 
+                background-color: #194dbd; 
                 transform: scale(1.05); 
               }
             
@@ -78,12 +71,25 @@
                 .link{
                     color: #babfc5;
                     transition: color 0.2s ease-out, transform 0.2s ease-out;
+                    display: flex;
+                    position: relative;
                 }
-                .link:hover{
+                .link::before {
+                    content: "";
+                    position: absolute;
+                    transform: translateY(-50%);
+                    width: 10px; /* Largura inicial da linha */
+                    height: 2px; /* Espessura da linha */
+                    background-color: #babfc5;
+                    transition: width 0.3s ease-in-out;
+                  }
+                .link:hover {
                     color: white;
-                    transform: scale(1.05); 
-                    transform: translateX(300px);
-                }
+                  }
+                  .link:hover::before {
+                    width: 25px; /* Expande no hover */
+                    background-color: white;
+                  }
             }
         }
     }
@@ -109,7 +115,7 @@
             }
             a:hover{
                 color: #E2E8F0;
-                color: #2ebeb2;
+                color: #194dbd;
             }
         }
     }

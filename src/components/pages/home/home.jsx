@@ -26,8 +26,8 @@ const Home = () => {
         <article className="about">
             <div className="aboutme">
                 <p className="desc">
-                    Hi, my name is James Marques and i am a computer science student and Full Stack Developer at Compass UOL. 
-                    Meus interesses estão voltados para Inteligência Artificial, Robótica e Desenvolvimento de Software, sempre buscando aprender e aplicar novos conhecimentos.
+                Hi, my name is James Marques, and I am a Computer Science student and a Full Stack Developer at Compass UOL.
+                My interests are focused on Artificial Intelligence, Robotics, and Software Development, always seeking to learn and apply new knowledge.
                 </p>
             </div>
             <div className="tech">
@@ -70,6 +70,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="jobs">
+                <h2 className="title">Experience</h2>
                 {data.map((element, index) => {
                     return (
                         <JobCard

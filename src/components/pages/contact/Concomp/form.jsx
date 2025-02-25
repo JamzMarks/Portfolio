@@ -1,38 +1,80 @@
-import React from "react";
+import React, { useState } from "react";
+import Button from "../../../utils/button/button";
+import { emailValidator } from "../../../../utils/validator/email-validator";
 
 const Form = () => {
+  const [validEmail, setValidEmail] = useState('');
+
+  const handleEmailChange = (event) => {
+    setValidEmail(event.target.value);
+  };
+  function handleEmailSubmit(event){
+
+    if (emailValidator(validEmail)) {
+      alert('Um link de confirmação foi enviado para o seu e-mail. Por favor, verifique sua caixa de entrada.');
+    } else {
+      event.preventDefault();
+        alert('Insira um e-mail válido!');
+    }
+  }
+
   return (
     <form
       action="https://formspree.io/f/mnqrjvge"
       method="POST"
       className="contact-Form"
+      onSubmit={handleEmailSubmit}
     >
-        <h2 className="title">Send a message</h2>
-
+        <h2 className="title">Send Me a Message</h2>
         <div className="forms">
-          <div className="form-group">
-            <label htmlFor="name">Full name</label>
-            <input className="inputs" type="text" name="name" placeholder="Full name" required/>
+
+          <div className="group">
+            <input 
+              required 
+              type="text" 
+              className="input" 
+              id="name"
+            />
+            <span className="highlight"></span>
+            <span className="bar"></span>
+            <label htmlFor="name">Name</label>
           </div>
-          <div className="form-group">
-            <label htmlFor="email">E-mail</label>
-            <input className="inputs" type="email" name="email" placeholder="E-mail..."required />
+
+          <div className="group">
+            <input 
+              required 
+              type="text" 
+              className="input" 
+              id="email"
+              value={validEmail}
+              onChange={handleEmailChange}
+            />
+            <span className="highlight"></span>
+            <span className="bar"></span>
+            <label htmlFor="email">Email</label>
+          </div>
+
+          <div className="group" id="textAreaGroup">
+            <textarea
+              className="input"
+              name="message"
+              id="contact-msg"
+              rows="3"
+              maxLength="400"
+              required
+            ></textarea>
+            <span className="highlight"></span>
+            <span className="bar"></span>
+            <label htmlFor="contact-msg">Message</label>
           </div>
         </div>
-        <div className="form-group">
-          <label htmlFor="msg">Message</label>
-          <textarea
-            className="inputs"
-            name="message"
-            id="contact-msg"
-            rows="7"
-            placeholder="Type a message"
-            required
-          ></textarea>
-        </div>
-        <button className="btn" type="submit" value="Send">
-            Enviar
-        </button>
+
+        <Button
+          className="teste"
+          text="Enviar"
+          type="submit"
+          icon='fas fa-paper-plane'
+        />
     </form>
   );
 };

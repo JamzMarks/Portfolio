@@ -16,14 +16,6 @@
 
  
 }
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-
-::-webkit-scrollbar-thumb {
-  background: #ff19439f;
-}
 
 a {
   font-weight: 500;

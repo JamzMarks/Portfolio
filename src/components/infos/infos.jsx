@@ -1,7 +1,5 @@
 import React from "react";
 import "./infos.scss";
-import cv_en from "../../assets/documents/cvEn.pdf";
-import cv_pt from "../../assets/documents/cvPt.pdf";
 import { Link } from "react-router-dom";
 
 const Infos = () => {
@@ -27,11 +25,12 @@ const Infos = () => {
                 </ul> 
             </nav>
             <div className="curriculo">
-                <a href={cv_pt} className="downBtn">
-                    <i className="fa-solid fa-file"></i>Curriculum PT
+                <h3>Curriculum Download</h3>
+                <a href="public/assets/documents/cvPt.pdf" className="downBtn">
+                    <i className="fa-solid fa-file"></i> PT-BR
                 </a>
-                <a href={cv_en} className="downBtn">
-                    <i className="fa-solid fa-file"></i>Curriculum EN
+                <a href="public/assets/documents/cvEn.pdf" className="downBtn">
+                    <i className="fa-solid fa-file"></i> EN-US
                 </a>
                 
             </div>
@@ -57,7 +56,7 @@ const Infos = () => {
               </a>
             </li>
             <li className="social">
-              <a href="https://github.com/JamzMarks" target="_blank">
+              <a href="https://www.reddit.com/user/Secret-Description72/" target="_blank">
                 <i className="fa-brands fa-reddit-alien"></i>
               </a>
             </li>

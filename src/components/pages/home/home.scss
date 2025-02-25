@@ -1,12 +1,18 @@
 @import '../../variable.scss';
 
 .about{
+    margin-top: 100px;
     display: grid;
     width: 100%;    
     align-items: start;
-    gap: 30px;
+    gap: 80px;
     .desc{
         text-align: justify;
+    }
+
+    .title{
+        text-align: left;
+        margin-bottom: 20px;
     }
 
     .tech{
@@ -28,12 +34,17 @@
                 display: flex;
                 gap: 15px;
                 .tech-item{
-                    background-color: aliceblue;
+                    border: 1px solid #194dbd;
+                    color: #205ee4;;
                     padding: 0 10px;
                     border-radius: 15px;
-                    color: rgb(2, 11, 43);
                 }
             }
         }
+    }
+    .jobs{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
     }
 }
