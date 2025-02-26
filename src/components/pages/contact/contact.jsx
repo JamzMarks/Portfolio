@@ -7,6 +7,7 @@ const Contact = () => {
     return(
         <section className="contact-Section">
             <Socials></Socials>
+            
             <Form></Form>
         </section>
         
