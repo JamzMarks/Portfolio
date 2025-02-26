@@ -27,37 +27,18 @@ const Home = () => {
                 <div className="tech-wrapper">
                     <p><i className="fa-solid fa-code"></i></p>
                     <ul className="tech-list">
-                        <li className="tech-item">JavaScript</li>
                         <li className="tech-item">TypeScript</li>
                         <li className="tech-item">C#</li>
-                        <li className="tech-item">C++</li>
                         <li className="tech-item">Python</li>
-                    </ul>
-                </div>
-                <div className="tech-wrapper">
-                    <p><i className="fa-solid fa-box"></i></p>
-                    <ul className="tech-list">
-                        <li className="tech-item">Docker</li>
-                        <li className="tech-item">Kubernets</li>
-                    </ul>
-                </div>
-                <div className="tech-wrapper">
-                    <p><i className="fa-solid fa-database"></i></p>
-                    <ul className="tech-list">
-                        <li className="tech-item">MySQL</li>
-                        <li className="tech-item">SQLServer</li>
-                        <li className="tech-item">PostgreSQL</li>
-                        <li className="tech-item">OracleDB</li>
                     </ul>
                 </div>
                 <div className="tech-wrapper">
                     <p><i className="fa-solid fa-screwdriver-wrench"></i></p>
                     <ul className="tech-list">
+                        <li className="tech-item">Node.js</li>
                         <li className="tech-item">React</li>
                         <li className="tech-item">Nest.js</li>
-                        <li className="tech-item">Node.js</li>
                         <li className="tech-item">Next.js</li>
-                        <li className="tech-item">Jest</li>
                     </ul>
                 </div>
             </div>

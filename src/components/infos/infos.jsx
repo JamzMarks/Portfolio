@@ -27,10 +27,10 @@ const Infos = () => {
             <div className="curriculo">
                 <h3>Curriculum Download</h3>
                 <div className="downloadBtns">
-                  <a href="/assets/documents/cvPt.pdf" className="downBtn">
+                  <a href="/documents/James Souza Marques - PT.pdf" className="downBtn"  rel="noopener noreferrer" target="_blank">
                       <i className="fa-solid fa-file"></i> PT-BR
                   </a>
-                  <a href="/assets/documents/cvEn.pdf" className="downBtn">
+                  <a href="/documents/cvEn.pdf" className="downBtn"  rel="noopener noreferrer" target="_blank">
                       <i className="fa-solid fa-file"></i> EN-US
                   </a>
                 </div>

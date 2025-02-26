@@ -17,10 +17,12 @@
     .tech{
         text-align: left;
         display: grid;
-        gap: 30px;
+        gap: 20px;
         .tech-wrapper{
             display: flex;
-            gap: 30px;
+            flex-direction: column;
+            gap: 15px;
+            
             p{
                 width: 50px;
                 i{
@@ -31,6 +33,7 @@
             .tech-list{
                 list-style: none;
                 display: flex;
+                flex-wrap: wrap;
                 gap: 15px;
                 .tech-item{
                     border: 1px solid #194dbd;
@@ -46,4 +49,18 @@
         flex-direction: column;
         gap: 30px;
     }
+}
+
+@media (min-width: 768) {
+    .about{
+        .tech{
+            .tech-wrapper{
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+            }
+        }
+    }
+    
+    
 }
