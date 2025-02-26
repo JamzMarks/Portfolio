@@ -1,50 +1,69 @@
 #root {
   margin: 0 auto;
   text-align: center;
-
-  --header-height: 100px;
-  --footer-height: 150px;
 }
 
 .App {
   width: 100%;
   max-width: 1240px;
-  margin: 0 auto;
-  height: 100vh;
-  display: flex; /* Define layout em colunas */
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .infos {
-  width: 40%;
-  height: 100vh;
-  position: sticky;
-  top: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding-left: 20px;
+  padding: 0 40px;
 }
 
 .content-main {
-  width: 60%;
-  height: 100vh;
-  overflow-y: auto; 
-  padding: 0 20px;
+  width: 100%;
+  padding: 0 40px;
   display: flex;
   flex-direction: column;
   gap: 100px;
-  justify-content: space-between;
-}
-.content-main::-webkit-scrollbar {
-  width: 0;
-  display: none;
+  justify-content: center;
 }
 
-.content-main {
-  scrollbar-width: none;
-}
-.content-main:first-child{
-  margin-top: 100px;
+
+@media (min-width: 768px) {
+  .App {
+    margin: 0 auto;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+  }
+  .infos {
+    width: 40%;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 20px;
+    
+  }
+  .content-main {
+    width: 60%;
+    margin-left: 40%; 
+    padding: 0 20px;
+    overflow-y: auto;
+    .about, .projects, .contact-Section{
+      margin-top: 150px;
+    } 
+  }
+  .content-main::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
+  
+  .content-main {
+    scrollbar-width: none;
+  }
 }
 

@@ -1,8 +1,6 @@
 .jobCard{
     border-radius: 5px;
     cursor: pointer;
-    display: grid;
-    grid-template-columns: 20% 1fr;
     text-align: left;
     gap: 20px;
     max-width: 655px;
@@ -13,7 +11,7 @@
     }
     .info{
         display: grid;
-        gap: 10px;
+        grid-template-rows: auto auto;
         .title .job{
             font-size: 18px;
             span {
@@ -44,6 +42,21 @@
     }
     
 }.jobCard:hover{
-    background-color: #3688cc13; /* Azul escuro */
-    // box-shadow: rgba(255, 255, 255, 0.12) 0px 2px 4px 0px, rgba(255, 255, 255, 0.32) 0px 2px 16px 0px;
+    background-color: #3688cc13; 
+    
+}
+
+@media (min-width: 768px) {
+    .jobCard{
+       display: grid;
+       grid-template-columns: 20% 1fr;
+       gap: 20px;
+       .info{
+        display: grid;
+        gap: 10px;
+        .title .job{
+            font-size: 18px;
+        }
+    }
+    }
 }

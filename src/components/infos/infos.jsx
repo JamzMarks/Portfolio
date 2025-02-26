@@ -26,12 +26,15 @@ const Infos = () => {
             </nav>
             <div className="curriculo">
                 <h3>Curriculum Download</h3>
-                <a href="public/assets/documents/cvPt.pdf" className="downBtn">
-                    <i className="fa-solid fa-file"></i> PT-BR
-                </a>
-                <a href="public/assets/documents/cvEn.pdf" className="downBtn">
-                    <i className="fa-solid fa-file"></i> EN-US
-                </a>
+                <div className="downloadBtns">
+                  <a href="/assets/documents/cvPt.pdf" className="downBtn">
+                      <i className="fa-solid fa-file"></i> PT-BR
+                  </a>
+                  <a href="/assets/documents/cvEn.pdf" className="downBtn">
+                      <i className="fa-solid fa-file"></i> EN-US
+                  </a>
+                </div>
+                
                 
             </div>
         </div>

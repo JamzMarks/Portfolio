@@ -4,30 +4,18 @@ const Socials = () => {
   return (
     <section className="socials">
         <h2 className="title">Contact</h2>
-      <div className="s_cont">
-        <div className="s_row">
-          <div className="s_title">
-            <h3>
-              <i className="fa-solid fa-phone"></i>Phone:
-            </h3>
-          </div>
-          <div className="s_info">
-            <p>+55 (11) 997960-292</p>
-          </div>
-        </div>
+      <div className="social-wrapper">
+        <h3>
+          <i className="fa-solid fa-phone"></i>Phone:
+        </h3>
+        <p>+55 (11) 997960-292</p>
       </div>
-      <div className="s_cont">
-        <div className="s_row">
-          <div className="s_title">
-            <h3>
-              <i className="fa-solid fa-envelope"></i> E-mail:
-            </h3>
-          </div>
-          <div className="s_info">
-            <p>jamzmarks@gmail.com</p>
-          </div>
+      <div className="social-wrapper">
+        <h3>
+          <i className="fa-solid fa-envelope"></i> E-mail:
+        </h3>
+        <p>jamzmarks@gmail.com</p>
         </div>
-      </div>
     </section>
   );
 };
