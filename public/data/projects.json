@@ -20,7 +20,7 @@
             "C++",
             "Arduino"
         ],
-        "image": "/assets/images/project/shop.co.png"
+        "image": "/assets/images/project/arduino.jpg"
     },
     {
         "id": 3,
@@ -46,5 +46,29 @@
             "Vite"
         ],
         "image": "/assets/images/project/portfolio.png"
+    },
+    {
+        "id": 5,
+        "title": "Zucco Motori v1",
+        "description": "My first HTML page with pure HTML, CSS and Javascript for my first apresentation in computer science class. Out of date.",
+        "link": "https://github.com/JamzMarks/APS---S1.git",
+        "tech": [
+            "HTML",
+            "JavaScript",
+            "CSS"
+        ],
+        "image": "/assets/images/project/zucco.png"
+    },
+    {
+        "id": 6,
+        "title": "Map project v1",
+        "description": "Interactive map with a postgreSQL database running local for communication tests.",
+        "link": "https://github.com/JamzMarks/Map.git",
+        "tech": [
+            "EJS",
+            "JavaScript",
+            "CSS"
+        ],
+        "image": "/assets/images/project/zucco.png"
     }
 ]

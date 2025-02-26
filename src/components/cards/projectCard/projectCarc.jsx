@@ -22,7 +22,7 @@ const ProjectCard = (props) => {
                 </div>
             </div>
             <div className="img-wrapper">
-                <img src={image} alt="Shop.co"/>
+                <img src={image} alt={title}/>
             </div>
             
         </article>
