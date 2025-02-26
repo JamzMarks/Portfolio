@@ -9,7 +9,7 @@
             "HTML",
             "CSS"
         ],
-        "image": "public/assets/images/project/shop.co.png"
+        "image": "/assets/images/project/shop.co.png"
     },
     {
         "id": 2,
@@ -20,7 +20,7 @@
             "C++",
             "Arduino"
         ],
-        "image": "public/assets/images/project/shop.co.png"
+        "image": "/assets/images/project/shop.co.png"
     },
     {
         "id": 3,
@@ -32,7 +32,7 @@
             "Photon",
             "Unity"
         ],
-        "image": "public/assets/images/project/trashKiller/menu.png"
+        "image": "/assets/images/project/trashKiller/menu.png"
     },
     {
         "id": 4,
@@ -45,6 +45,6 @@
             "SASS",
             "Vite"
         ],
-        "image": "public/assets/images/project/portfolio.png"
+        "image": "/assets/images/project/portfolio.png"
     }
 ]

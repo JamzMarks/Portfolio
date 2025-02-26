@@ -1,19 +1,15 @@
 import React, { useEffect, useState } from "react";
 import ProjectCard from "../../cards/projectCard/projectCarc";
 import './projects.scss';
-
+import { fetchData } from "../../../utils/fetchData";
 const Projects = () => {
     const [project, setProject] = useState([]);
 
     useEffect(() => {
         async function getData(){
             try {
-                const response = await fetch('public/data/projects.json')
-                if(!response.ok){
-                    throw new Error("Erro ao buscar os dados");
-                }
-                const jsonData = await response.json();
-                setProject(jsonData);
+                const response = await fetchData('projects.json')
+                setProject(response);
             } catch (error) {
                 console.error("Erro ao carregar os dados:", error);
             }

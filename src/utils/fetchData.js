@@ -1,6 +1,5 @@
-
 export async function fetchData(dataUrl){
-    const baseURL = "src/assets/data/"
+    const baseURL = "/data/"
     try {
         const response = await fetch(baseURL + dataUrl);
         if (!response.ok) {

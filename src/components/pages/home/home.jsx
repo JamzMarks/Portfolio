@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import JobCard from '../../cards/jobCard/jobCard'
 import './home.scss'
-// import { fetchData } from "../../../utils/fetchData";
+import { fetchData } from "../../../utils/fetchData";
 
 
 const Home = () => {  
@@ -9,16 +9,8 @@ const Home = () => {
 
     useEffect(() => {
             async function getData(){
-                try {
-                    const response = await fetch('public/data/jobs.json')
-                    if(!response.ok){
-                        throw new Error("Erro ao buscar os dados");
-                    }
-                    const jsonData = await response.json();
-                    setData(jsonData);
-                } catch (error) {
-                    console.error("Erro ao carregar os dados:", error);
-                }
+                const response = await fetchData('jobs.json')
+                setData(response);
             }
             getData();
         }, [])
